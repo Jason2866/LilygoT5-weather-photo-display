@@ -16,7 +16,7 @@
 #define ENABLE_BATTERY_IMAGE
 #endif
 
-//#define ENABLE_GARBAGE
+#define ENABLE_GARBAGE
 
 #ifdef ENABLE_BACKGROUND
 

@@ -7,7 +7,7 @@ function make_dot_h() {
     out="src/$name.png"
     h_out="src/images/$name.h"
     convert "$1" -background white -flatten -alpha off -colors 16 "$out"
-    python ./.pio/libdeps/esp32dev/epd_driver/scripts/imgconvert.py -i "$out" -o "$h_out" -n "$name"
+    python ./lib/epdiy/epdiy/scripts/imgconvert.py -i "$out" -o "$h_out" -n "$name"
     rm "$out"
 }
 
